@@ -27,7 +27,7 @@ maindloop: main.c basicClassification.o libclassloops.so
 maindrec: main.c basicClassification.o libclassrec.so
 	$(CC) -Wall -o maindrec main.c basicClassification.o ./libclassrec.so
 
-all: mains maindloop maindrec
+all: mains maindloop maindrec libclassloops.a
 
 loops: libclassloops.a
 
